@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior de Idade</title>
+</head>
+<body>
+    <h2>Desafio Proposto</h2>
+    <table>
+        <tr>Carta de Habilitação:</tr>
+        <td><input type="text" id="info" placeholder="Nome:"></td>
+        <td><input type="number" id="idade"></td>
+        <td><input type="button" value="Resultado" id="btn" onclick="maiorDeIdade()"></td>
+    </table>
+    <p id="result">Resultado:</p>
+    <p id="name"></p>
+
+    <script>
+        function maiorDeIdade() {
+
+            var t1 = document.querySelector('#idade');
+            var t2 = document.querySelector('#result');
+            var idade = Number(t1.value);
+            
+            var n = document.querySelector('#info');
+            var name = String(n.value);
+            var info = document.getElementById('name');
+
+            if (idade >= 18) {
+                t2.innerHTML = `${name}, voce pode tirar a carta de habilitacao!`;
+            }
+            else {
+                t2.innerHTML = `Infelizmente ${name}, voce nao pode tirar sua carta de habilitacao!`;
+            }
+
+            info.innerHTML = `Olá, ${name}! seu nome ficara registrado em nosso banco de dados para futuras atualizações`;
+        }
+    </script>
+</body>
+</html>

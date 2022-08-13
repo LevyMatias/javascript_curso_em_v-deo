@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+</head>
+
+<body>
+    <h2>Sistema de Temperatura</h2>
+    <table>
+        <tr>Temperatura:</tr>
+        <td><span>C° </span><input type="number" id="temp"></td>
+        <td><input type="button" value="Verificar" id="btn" onclick="temperatura()"></td>
+    </table>
+    <p id="result">Resultado de hoje:</p>
+
+    <script>
+        function temperatura() {
+            var t1 = document.querySelector('#temp');
+            var t2 = document.querySelector('#result');
+            var temp = Number(t1.value);
+
+            if (temp >= 25) {
+                t2.innerHTML = `Hoje voce pode ir para a praia!`;
+            }
+            else {
+                t2.innerHTML = ` Quem sabe outro dia!`;
+            }
+        }
+    </script>
+</body>
+
+</html>
