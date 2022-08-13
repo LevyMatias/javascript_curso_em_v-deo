@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-3</title>
+    <style>
+        body {
+            background-color: darkorange;
+            color: crimson;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 06</h1>
+    <p>Exercício número 3</p>
+
+    <script>
+        // conversao explicita
+       var a = parseInt(prompt("A: "))
+       var b = parseInt(prompt("B: "))
+
+       alert(a+b)
+        
+       // convertido pelo compilador do js
+       var c = Number(prompt("C: "))
+       var d = Number(prompt("D: "))
+
+       alert(c+d)
+
+       var name = prompt("Seu nome: ")
+       var idade = prompt("Sua idade: ")
+       var altura = parseFloat(prompt("Sua altura: "))
+
+       // interpolacao (template strings)
+       alert(`Olá, ${name}. Sua altura é ${altura} e voce tem ${idade} anos!`)
+    </script>
+
+</body>
+</html>
