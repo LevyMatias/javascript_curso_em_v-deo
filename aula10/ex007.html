@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando os Números</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(21, 21, 54);
+        }
+        .calc {
+            background-color: rgb(238, 210, 51);
+            width: 40vw;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Soma de Valores</h1>
+    <div class="calc">
+        <input type="number" name="txtn1" id="n1">
+        <input type="number" name="txtn2" id="n2">
+        <input type="button" value="soma" onclick="somar()">
+        <input type="button" value="multiplicacao" onclick="multiplicar()">
+    </div>
+    <p class="res" id="result">Resultado</p>
+    <p class="res" id="result2"></p>
+
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('n1');
+            var tn2 = document.querySelector('input#n2');
+            var result = document.querySelector('#result');
+            var n1 = parseInt(tn1.value);
+            var n2 = Number(tn2.value);
+            var sum = n1 + n2;
+
+            result.innerHTML = `O resultado da soma é: <strong>${sum}</strong>`
+        }
+
+        function multiplicar() {
+            var tn1 = document.getElementById('n1');
+            var tn2 = document.querySelector('input#n2');
+            var result = document.querySelector('#result2');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var sum = n1 * n2;
+
+            result.innerHTML = `O resultado da multiplicacao é: <strong>${sum}</strong>`
+        }
+    </script>
+</body>
+
+</html>
