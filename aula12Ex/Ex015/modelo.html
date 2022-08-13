@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Verificador de idade!</h1>
+    </header>
+
+    <section class="middle">
+        <div class="col">
+            <fieldset>
+                <legend>Personalidade:</legend>
+                <label for="fname">Ano de nascimento:</label>
+                <input type="number" id="fnum"><br><br>
+                <label for="text">Sexo:</label>
+                <label for="lname">M</label>
+                <input type="radio" id="opt" name="fs">
+                <label for="lname">F</label>
+                <input type="radio" id="opt" name="fs"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Verificar" onclick="verificar()">
+               </fieldset>
+        </div>
+
+        <div id="res">
+            <span>essa e outra coluna!</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;JavaScript</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
