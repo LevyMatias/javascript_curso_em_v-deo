@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom</title>
+    <style>
+        .box {
+            border: solid #000 3px;
+            padding: 1rem;
+        }
+        .box span {
+            background-color: rgb(255, 255, 132);
+            border-radius: 2px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        body {
+            background-color: #fdeb28;
+            color: #000;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Estudando o DOM</h2>
+        <p>Curso de JavaScript</p>
+        <span>Download</span>
+    </div>
+
+    <script>
+        var s = document.getElementsByTagName('span')[0];
+        var d1 = document.getElementsByClassName('box')[0]
+        // s.style.background = "white"
+        // d1.innerHTML = 'Cursando Js'
+
+        var d2 = document.querySelector('h2');
+        d2.style.color='gray'
+    </script>
+</body>
+
+</html>
